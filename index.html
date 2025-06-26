@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math Quiz</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="quiz.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="random-circle"></div>
+
+    <div class="Container">
+      <div id="page1">
+        <h1>Math Quiz</h1>
+
+        <div id="Choices">
+          <h2 id="Question"></h2>
+          <input type="radio" name="one" id="a" />
+          <label for="a" id="LA"></label>
+          <br />
+          <input type="radio" name="one" id="b" />
+          <label for="b" id="LB"></label>
+          <br />
+          <input type="radio" name="one" id="c" />
+          <label for="c" id="LC"></label>
+          <br />
+          <input type="radio" name="one" id="d" />
+          <label for="d" id="LD"></label>
+          <br />
+        </div>
+        <br />
+        <button id="Previous">Previous Question</button>
+        <button id="Next">Next Question</button>
+        <h4 id="count">1/20</h4>
+      </div>
+      <div id="page2">
+        <h1>Results</h1>
+        <h2 id="Pscore">0%</h2>
+        <h2 id="score">0/20</h2>
+        <h2 id="complement"></h2>
+        <h2 id="test"></h2>
+        <hr />
+        <span>
+          <ul class="labels">
+            <li class="Labels1"><h4 class="Labels1">Question</h4></li>
+            <li class="Labels"><h4 class="Labels">Your answer</h4></li>
+            <li class="Labels"><h4 class="Labels">Correct answer</h4></li>
+          </ul>
+        </span>
+
+        <ul id="finalDisplay">
+          <!-- <li class="correct">
+            <h3>Question: 1. What is your Choice?</h3>
+            <h3>Correct Answer: C. Choice 3</h3>
+            <h3>Your Answer: C. Choice 3</h3>
+          </li> -->
+        </ul>
+        <button id="refresh" class="btn3">Retake Quiz</button>
+      </div>
+      <div class="dontDisplay"><h2 id="test"></h2></div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
